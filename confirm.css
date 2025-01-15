@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.contactnav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    background-color: #1f1f2e;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contactnav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.contactnav a:hover {
+    color: #f7b731;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ec2027;
+    /* opacity: .5; */
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar .logo img{
+    height: 50px;
+    width: 90px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a.active {
+    color: #000000;
+    width: 100%;
+    padding: 7px 15px;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar ul li a.active:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.navbar ul li a:hover {
+    color: #f7b731;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.navbar .menu-toggle:hover {
+    color: #f7b731;
+}
+
+/* confirm */
+
+.confirm {
+    margin-top: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180vh;
+}
+
+.confirm .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.confirm .info-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.confirm .info h3 {
+    font-size: 1.5rem;
+    margin-top: 28px;
+    /* margin-bottom: 20px; */
+    color: #000000;
+}
+
+.confirm .info-field img {
+    height: 50px;
+    width: 70px;
+}
+
+.confirm .info-field span {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.confirm .final-cost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.confirm .final-cost span {
+    font-size: 2rem;
+    color: #000000;
+}
+
+.confirm .final-cost strong {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.confirm .info .feature {
+    display: flex;
+    gap: 1rem;
+}
+
+.confirm .info .feature .info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+.confirm .info .feature .info img {
+    height: 30px;
+    width: 30px;
+}
+
+.confirm .info .feature .info span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.confirm .info .fare {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+.confirm .info .fare ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.confirm .info .fare ul li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.confirm .info .fare ul li strong {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ec2027;
+}
+
+.confirm .info .fare ul li span {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.confirm .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.confirm .form h1 {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.confirm .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.confirm .form .form-field {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+.confirm .form .form-field label {
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.confirm .form .form-field input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #1f1f2e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.confirm .form .form-field input::placeholder {
+    color: #1f1f2e;
+}
+
+.confirm .form form .submit-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #ec2027;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.confirm .form .form-field button:hover {
+    background-color: #ee4349;
+}
+
+.confirm .form .form-field button:active {
+    background-color: #ec2027;
+}
+
+
+
+/* footer */
+
+.footer {
+    background-color: #1f1f2e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.footer .footer_box {
+    float: left;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+}
+
+.footer .footer_box .contact {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .footer_box .contact a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer .footer_box .contact a img {
+    margin-right: 0.5rem;
+    height: 20px;
+    width: 20px;
+}
+
+.footer .footer_box .contact a:hover {
+    color: #1f1f2e;
+}
+
+.footer .footer_box_1 {
+    float: left;
+    flex: 1;
+    text-align: left;
+    margin-right: auto;
+}
+
+.footer .footer_box_1 p {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.footer .footer_box_1 h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer .footer_box h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer .footer_box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .footer_box ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer .footer_box ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .footer_box ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer_box_1 p {
+    margin-bottom: 0.5rem;
+} 
+
+footer {
+    background-color: #0f0f16;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+footer p {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .confirm {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 190vh;
+    }
+
+    .confirm .info .fare {
+        flex-direction: column;
+    }
+
+    .contactnav .number {
+        font-size: 0.8rem;
+    } 
+
+    .footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

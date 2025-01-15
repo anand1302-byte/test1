@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book.css">
+    <title>Booking | Renaak </title>
+</head>
+
+<body>
+    <section class="nav">
+        <div class="contactnav">
+            <a href="tel:+91123456789" class="number">+91-123456789</a>
+            <a href="mailto:t2KQH@example.com" class="email">t2KQH@example.com</a>
+        </div>
+        <div class="navbar" id="navbar">
+            <div class="logo"><img src="images-removebg-preview.png" alt="" srcset=""></div>
+            <ul id="nav-links">
+                <li><a href="confirm.html">Contact</a></li>
+                <li><a href="about_us.html">About</a></li>
+                <li><a href="confirm.html" class="active">Tour</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">☰</div>
+        </div>
+    </section>
+    <section class="book">
+        <div class="book-form">
+            <div class="book-header">
+                <button class="tab-link active" data-tab="one-way">Oneway</button>
+                <button class="tab-link" data-tab="out-station">Round-trip</button>
+                <button class="tab-link" data-tab="rental">Rental</button>
+                <button class="tab-link" data-tab="airport">Airport</button>
+            </div>
+            <div class="book-content active" id="one-way">
+                <form id="one-way-form">
+                <div class="form-group">
+                    <label for="pickup">Pickup Location</label>
+                    <input type="text" class="location" id="pickup" placeholder="Enter pickup location">
+                </div>
+                <div class="form-group">
+                    <label for="drop">Drop Location</label>
+                    <input type="text" class="location" id="drop" placeholder="Enter drop location">
+                </div>
+                <div class="form-group">
+                    <div class="day">
+                        <div class="time">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" class="date">
+                        </div>
+                        <div class="time">
+                            <label for="time">Time</label>
+                            <input type="time" id="time">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group submit">
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </form>
+            </div>
+            <div class="book-content" id="out-station">
+                <form id="out-station-form">
+                <div class="form-group">
+                    <label for="pickup">Pickup Location</label>
+                    <input type="text" id="pickup" placeholder="Enter pickup location">
+                </div>
+                <div class="form-group">
+                    <label for="drop">Drop Location</label>
+                    <input type="text" id="drop" placeholder="Enter drop location">
+                </div>
+                <div class="form-group">
+                    <div class="day">
+                        <div class="time">
+                            <label for="date">Date</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="time">
+                            <label for="time">Time</label>
+                            <input type="time" id="time">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-group submit">
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </form>
+            </div>
+            <div class="book-content" id="rental">
+                <form id="rental-form">
+                <div class="form-group">
+                    <label for="pickup">Pickup Location</label>
+                    <input type="text" id="pickup" placeholder="Enter pickup location">
+                </div>
+                <div class="form-group">
+                    <label for="drop">Drop Location</label>
+                    <input type="text" id="drop" placeholder="Enter drop location">
+                </div>
+                <div class="form-group">
+                    <div class="time">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="time">
+                        <label for="time">Time</label>
+                        <input type="time" id="time">
+                    </div>
+                </div>
+                <div class="form-group submit">
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </form>
+            </div>
+            <div class="book-content" id="airport">
+                <form id="airport-form">
+                <div class="form-group">
+                    <input type="checkbox" name="checkbox" id=""> Going to Airport
+                    <input type="checkbox" name="checkbox" id=""> Coming from Airport
+                </div>
+                <div class="form-group">
+                    <label for="pickup">Pickup Location</label>
+                    <input type="text" id="pickup" placeholder="Enter pickup location">
+                </div>
+                <div class="form-group">
+                    <label for="drop">Drop Location</label>
+                    <input type="text" id="drop" placeholder="Enter drop location">
+                </div>
+                <div class="form-group">
+                    <div class="time">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="time">
+                        <label for="time">Time</label>
+                        <input type="time" id="time">
+                    </div>
+                </div>
+                <div class="form-group submit">
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+    <section class="table">
+        <div class="cars">
+            <table class="table-cars">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Vehicle Model</th>
+                        <th>Included Km</th>
+                        <th>Estimate (INR)</th>
+                        <th>Advance</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="fleet-i10.webp" id="suv-img" alt="Vehicle"></td>
+                        <td> <span>Vehicle Model</span> SUV</td>
+                        <td class="km"> <span>Included Km</span> <p id="distance-suv"></p> km</td>
+                        <td > <span>Estimate (INR)</span> <p id="suv"></p> ₹</td>
+                        <td> <span>Advance</span> 0</td>
+                        <td><button onclick="bookNow('suv', 20)">Book Now</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="prime.png" id="prime-img" alt="Vehicle"></td>
+                        <td><span>Vehicle Model</span>SUV prime</td>
+                        <td class="km"><span>Included Km</span><p id="distance-prime"></p> km</td>
+                        <td><span>Estimate (INR)</span><p id="prime"></p>₹</td>
+                        <td><span>Advance</span>0</td>
+                        <td><button onclick="bookNow('prime', 24)">Book Now</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="fleet-ToyotaEtios.webp" id="sadan-img" alt="Vehicle"></td>
+                        <td><span>Vehicle Model</span>Sadan</td>
+                        <td class="km"><span>Included Km</span><p id="distance-sedan"></p> km</td>
+                        <td><span>Estimate (INR)</span><p id="sedan"></p>₹</td>
+                        <td><span>Advance</span>0</td>
+                        <td><button onclick="bookNow('sedan',15)">Book Now</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="fleet-ToyotaInnova.webp" id="innova-img" alt="Vehicle"></td>
+                        <td><span>Vehicle Model</span>Toyota Innova</td>
+                        <td class="km"><span>Included Km</span><p id="distance-innova"></p> km</td>
+                        <td><span>Estimate (INR)</span><p id="innova"></p>₹</td>
+                        <td><span>Advance</span>0</td>
+                        <td><button onclick="bookNow('innova',30)">Book Now</button></td>
+                    </tr>
+                    <tr class="round-trip-only">
+                        <td><img src="fleet-ToyotaInnova.webp" id="innova-crysta-img" alt="Vehicle"></td>
+                        <td><span>Vehicle Model</span>Toyota Innova Crysta</td>
+                        <td class="km"><span>Included Km</span><p id="distance-innova-crysta"></p> km</td>
+                        <td><span>Estimate (INR)</span><p id="innova-crysta"></p>₹</td>
+                        <td><span>Advance</span>0</td>
+                        <td><button onclick="bookNow('innova-crysta',20)">Book Now</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer_box_1">
+            <h5>About Us</h5>
+            <p> ASSURE CAB is a complete car rental solution for local, outstation & holidays tour. Within few years of
+                its launch, ASSURE CAB has positioned itself as In.</p>
+        </div>
+        <div class="footer_box">
+            <h5>Company</h5>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="rider-app.html">Rider App</a></li>
+                <li><a href="driver-app.html">Driver App</a></li>
+                <li><a href="vendor-app.html">Vendor App</a></li>
+            </ul>
+        </div>
+        <div class="footer_box">
+            <h5>Services</h5>
+            <ul>
+                <li><a href="round-trip.html">Round Trip(Outstation) Cabs</a></li>
+                <li><a href="oneway-drops.html">Oneway Drops</a></li>
+                <li><a href="local-rentals.html">Local Rentals</a></li>
+                <li><a href="corporate-cab-rental.html">Corporate Cab Rental</a></li>
+                <li><a href="railway-station.html">Railway Station Transfer</a></li>
+                <li><a href="airport-transfer.html">Airport Transfer</a></li>
+                <li><a href="hourly-package.html">Hourly Package</a></li>
+                <li><a href="outstation-travel.html">Outstation Taxi</a></li>
+            </ul>
+        </div>
+        <div class="footer_box">
+            <h5>Policy</h5>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="cancellation-policy.html">Cancellation Policy</a></li>
+                <li><a href="refund-policy.html">Refund Policy</a></li>
+                <li><a href="terms-condition.html">Terms & Condition</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+        </div>
+        <div class="footer_box">
+            <h5>Get in Touch</h5>
+
+            <div class="contact">
+                <a href="https://www.facebook.com/assurecab"><img src="facebook-logo1.png" alt=""></a>
+                <a href="https://www.instagram.com/assurecab/"><img src="instagram1.png" alt=""></a>
+                <a href="https://twitter.com/assurecab"><img src="twitter11.png" alt=""></a>
+                <a href="https://www.instagram.com/assurecab/"><img src="linkedin.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="book.js"></script>
+
+
+</html>

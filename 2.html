@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .faq {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .faqs {
+            margin-top: 20px;
+        }
+
+        .faqs .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq-item h4 {
+            margin: 0;
+            padding: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            background: #f1f1f1;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+
+        .faq-item h4:hover {
+            background-color: #e1e1e1;
+        }
+
+        .faq-item p {
+            margin: 0;
+            padding: 10px;
+            font-size: 16px;
+            color: #555;
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+    <section class="faq">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faqs">
+            <div class="faq-item">
+                <h4>How does ASSURE CAB work?</h4>
+                <p>ASSURE CAB is a complete car rental solution for local, outstation & holidays tour. Within few years of its launch, ASSURE CAB has positioned itself as India’s premier service.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What services does ASSURE CAB provide?</h4>
+                <p>ASSURE CAB offers a variety of services such as local rentals, outstation travel, one-way trips, and holiday tours to meet diverse customer needs.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do I book a ride with ASSURE CAB?</h4>
+                <p>You can book a ride through the ASSURE CAB mobile app or website by entering your pickup and drop-off locations, selecting your preferred car type, and confirming the booking.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is ASSURE CAB available 24/7?</h4>
+                <p>Yes, ASSURE CAB operates 24/7 to ensure that you can book a ride at any time of the day or night.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Select all FAQ items
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('h4');
+
+            question.addEventListener('click', () => {
+                // Toggle the visibility of the answer
+                const answer = item.querySelector('p');
+                const isVisible = answer.style.display === 'block';
+
+                // Hide all answers first
+                faqItems.forEach(i => i.querySelector('p').style.display = 'none');
+
+                // Show the clicked answer if it was hidden
+                if (!isVisible) {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

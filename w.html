@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="contact-us">
+        <div class="contact-us-header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out to us anytime, and we'll happily answer your questions.</p>
+        </div>
+        <div class="contact-us-container">
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><strong>Phone:</strong> +91-123456789</p>
+                <p><strong>Email:</strong> contact@example.com</p>
+                <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    .contact-us {
+        padding: 2rem;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    
+    .contact-us-header h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: #ec2027;
+    }
+    
+    .contact-us-header p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        color: #333;
+    }
+    
+    .contact-us-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .contact-form, .contact-info {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        flex: 1 1 300px;
+        max-width: 400px;
+    }
+    
+    .contact-form h2, .contact-info h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #1f1f2e;
+    }
+    
+    .contact-form .form-group {
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    
+    .contact-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        color: #666;
+    }
+    
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+    
+    .contact-form .submit-btn {
+        background-color: #ec2027;
+        color: #fff;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .contact-form .submit-btn:hover {
+        background-color: #b71c1c;
+    }
+    
+    .contact-info p {
+        font-size: 1rem;
+        color: #333;
+        margin: 0.5rem 0;
+    }
+    
+    .contact-info h3 {
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+        color: #1f1f2e;
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .social-links .social-icon {
+        background-color: #ec2027;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: background-color 0.3s;
+    }
+    
+    .social-links .social-icon:hover {
+        background-color: #b71c1c;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .contact-us-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .contact-form, .contact-info {
+            width: -webkit-fill-available;
+            max-width: 100%;
+        }
+    
+        .contact-form h2, .contact-info h2 {
+            font-size: 1.3rem;
+        }
+    
+        .contact-form input, .contact-form textarea {
+            width: -webkit-fill-available;
+            font-size: 0.9rem;
+        }
+    
+        .contact-form .submit-btn {
+            font-size: 0.9rem;
+            padding: 0.6rem 1.2rem;
+        }
+    
+        .social-links .social-icon {
+
+            font-size: 0.5rem;
+            padding: 0.5rem 0.5rem;
+        }
+    }
+    </style>  
+</body>
+</html>

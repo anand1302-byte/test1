@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <div class="tab-container">
+        <div class="tab-header">
+            <button class="tab-link active" data-tab="one-way">One Way</button>
+            <button class="tab-link" data-tab="out-station">Out Station</button>
+            <button class="tab-link" data-tab="rental">Rental</button>
+            <button class="tab-link" data-tab="airport">Airport</button>
+        </div>
+        <div class="tab-content active" id="one-way">
+            <form id="one-way-form">
+                <div class="form-group">
+                    <label for="pickup">Pickup Location</label>
+                    <input type="text" id="pickup" placeholder="Enter pickup location">
+                </div>
+                <div class="form-group">
+                    <label for="drop">Drop Location</label>
+                    <input type="text" id="drop" placeholder="Enter drop location">
+                </div>
+
+                <div class="form-group">
+                    <div class="time">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" value="2021-09-01">
+                    </div>
+                    <div class="time">
+                        <label for="">Time</label>
+                        <input type="time" id="time" value="12:00">
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class="tab-content" id="out-station">
+            <form id="out-station-form">
+                <div class="form-group">
+                    <label for="from">From</label>
+                    <input type="text" id="pickup" placeholder="Enter starting point">
+                </div>
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <input type="text" id="drop" placeholder="Enter destination">
+                </div>
+                <div class="form-group">
+                    <div class="time">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" value="2021-09-01">
+                    </div>
+                    <div class="time">
+                        <label for="">Time</label>
+                        <input type="time" id="time" value="12:00">
+                    </div>
+                    <div class="time">
+                        <label for="">Return date</label>
+                        <input type="date" id="return-date" value="2021-09-01">
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class="tab-content" id="rental">
+            <form id="rental-form">
+                <div class="form-group">
+                    <label for="duration">Rental Duration (hrs)</label>
+                    <input type="number" id="duration" placeholder="Enter rental duration">
+                </div>
+                <div class="form-group">
+                    <label for="vehicle">Vehicle Type</label>
+                    <select id="vehicle">
+                        <option value="car">Car</option>
+                        <option value="bike">Bike</option>
+                        <option value="van">Van</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class="tab-content" id="airport">
+            <form id="airport-form">
+                <div class="form-group">
+                    <label for="flight">pickup Location</label>
+                    <input type="text" id="pickup" placeholder="Enter pickup location">
+                </div>
+                <div class="form-group">
+                    <label for="terminal">drop Location</label>
+                    <input type="text" id="drop" placeholder="Enter drop location">
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADfHyOR6xqDp7V34bbRUA66T90_IovLbs&libraries=places,geometry"></script>
+    <script src="./form.js"></script>
+</body>
+
+</html>
